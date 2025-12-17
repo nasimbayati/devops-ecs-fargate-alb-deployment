@@ -14,6 +14,22 @@ This lab follows a realistic DevOps flow:
 ![ECS Fargate Architecture](docs/architecture-tio2-ecs-fargate.png)
 
 ---
+## Architecture (Implemented)
+
+![My ECS Architecture](docs/architecture-tio2-ecs-fargate.png)
+
+
+
+
+## Architecture (Course Reference)
+
+The following diagram is provided by the DevOps TIO course and illustrates how TIO1, TIO2, and TIO3 fit together conceptually.
+
+![DevOps TIO Reference Architecture](docs/devops-tio-reference.png)
+
+> Reference diagram provided by the DevOps TIO course (used for conceptual context).
+
+---
 
 ## Technologies Used
 - **AWS ECS (Fargate)**
@@ -51,6 +67,14 @@ This lab follows a realistic DevOps flow:
 - **8080/tcp** — ALB → ECS tasks (health checks + app traffic)
 
 ---
+
+## Quick Demo
+- Open ALB URL and confirm response is v3
+- Confirm Target Group shows 2 healthy targets
+- Confirm ECS service maintains Desired=2 (self-healing)
+
+---
+
 
 ## Application Access
 The application is accessed **only via the Application Load Balancer**, not directly via containers or an EC2 public IP.
