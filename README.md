@@ -11,7 +11,7 @@ This lab follows a realistic DevOps flow:
 ---
 
 ## Architecture
-![ECS Fargate Architecture](docs/architecture-tio2-ecs-fargate.png)
+![ECS Fargate Architecture](docs/my-architecture-tio2-ecs-fargate.png)
 
 ---
 ## Architecture (Implemented)
